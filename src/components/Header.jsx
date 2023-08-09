@@ -34,16 +34,12 @@ const Header = () => {
       <div className="hidden md:flex gap-4 ">
         {menuList.map((item) => (
           <div key={item.id}>
-            <h2 className="text-black text-[15px] px-3 py-1 cursor-pointer hover:scale-105 hover:bg-gradient-to-b transition-all duration-500 from-[#ffffff] to-[#1F6E8C] border-[1px] border-gray-700 rounded-full">
-              {item.title}
-            </h2>
+            <h2 className="btn-style">{item.title}</h2>
           </div>
         ))}
       </div>
       <div className="hidden md:flex">
-        <button className="text-black text-[15px] px-3 py-1 cursor-pointer hover:scale-105 hover:bg-gradient-to-b transition-all duration-500 from-[#ffffff] to-[#1F6E8C] border-[1px] border-gray-700 rounded-full">
-          Hire Me
-        </button>
+        <button className="btn-style">Hire Me</button>
       </div>
       <div className="md:hidden">
         {toggle ? (
@@ -52,9 +48,12 @@ const Header = () => {
             className="relative text-white text-[30px] cursor-pointer z-20"
           />
         ) : (
-          <GiCrossMark onClick={()=>setToggle(!toggle)} className="relative text-white text-[25px] cursor-pointer z-20" />
+          <GiCrossMark
+            onClick={() => setToggle(!toggle)}
+            className="relative text-white text-[25px] cursor-pointer z-20"
+          />
         )}
-        <MenuOverlay toggle={toggle} menuList={menuList}/>
+        <MenuOverlay toggle={toggle} menuList={menuList} />
       </div>
     </div>
   );

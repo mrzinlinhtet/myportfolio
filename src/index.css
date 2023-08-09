@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-style {
+     @apply text-black rounded-xl shadow-2xl text-[17px] px-3 py-1 cursor-pointer bg-gradient-to-b transition-all duration-100 from-[#ffffff] to-[#1F6E8C] hover:border-[2px] hover:border-white
+}
