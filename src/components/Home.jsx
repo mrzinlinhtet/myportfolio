@@ -6,8 +6,22 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import { BsFileArrowUpFill } from "react-icons/bs";
 import ScrollToTop from "react-scroll-up";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Home = () => {
+  const notify = () => {
+    toast.success("Thanks for your message!", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+  };
 
   const darkMode = useSelector((state) => state.darkMode.isDarkMode);
   return (
@@ -19,12 +33,24 @@ const Home = () => {
       </nav>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-10">
         <Navbar />
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+        />
         <Hero />
         <About />
         <Projects />
-        <Contact />
+        <Contact notify={notify} />
         <ScrollToTop showUnder={160}>
-            <BsFileArrowUpFill className="text-4xl " />
+          <BsFileArrowUpFill className="text-4xl " />
         </ScrollToTop>
       </main>
     </div>
