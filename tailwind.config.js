@@ -7,8 +7,9 @@ export default {
       fontFamily: {
         burtons: "burtons",
         poppins: ["Poppins", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"],
       },
     },
   },
-  plugins: [],
+  plugins: ["flowbite/plugin"],
 };
