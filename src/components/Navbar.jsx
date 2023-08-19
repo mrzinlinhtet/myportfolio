@@ -2,15 +2,14 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useDispatch } from "react-redux";
 import { toggleDarkMode } from "../services/darkModeSlice";
 import { NavLink } from "react-router-dom";
-
-
+// import { Link } from "react-scroll";
 const Navbar = () => {
   const dispatch = useDispatch();
 
   return (
     <nav className="bg-white dark:bg-gray-900 dark:text-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto p-4">
-        <a href="/" className="flex items-center">
+        <NavLink to={"/"} className="flex">
           <img
             src="zlh3-modified.png"
             className="h-10 w-15 mr-3 rounded-3xl"
@@ -19,7 +18,7 @@ const Navbar = () => {
           <span className="font-burtons self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             <span className="text-[#1F6E8C] text-xl font-bold ">Gamani</span>
           </span>
-        </a>
+        </NavLink>
         <div className="flex md:order-2">
           <button
             onClick={() => dispatch(toggleDarkMode())}
@@ -59,14 +58,10 @@ const Navbar = () => {
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <NavLink to={"/"}>
-              Home
-              </NavLink>
+              <NavLink to={"/"}>Home</NavLink>
             </li>
             <li>
-              <NavLink to={"/projects"}>
-              Projects
-              </NavLink>
+              <NavLink to={"/projects"}>Projects</NavLink>
             </li>
           </ul>
         </div>

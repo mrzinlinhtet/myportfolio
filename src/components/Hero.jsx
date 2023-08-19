@@ -1,9 +1,12 @@
+import { BsMouse } from "react-icons/bs";
+import { Link } from "react-scroll";
+
 const Hero = () => {
   return (
     <section id="hero" className="w-full min-h-screen">
       <div className="flex p-10 py-10 justify-center items-center">
         <div className="flex-1">
-          <h2 className="text-5xl -tracking-wider py-2 text-[#1387B5] font-medium md:text-5xl mb-3">
+          <h2 className="text-5xl -tracking-wider py-2 text-[#1F6E8C] font-medium md:text-5xl mb-3">
             Hello, I'm ZLH (Gamani).
           </h2>
           <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
@@ -21,6 +24,16 @@ const Hero = () => {
           />
         </div>
       </div>
+      <Link
+        to="about"
+        offset={-99}
+        smooth
+        spy
+        activeClass="active"
+        className="cursor-pointer mr-4 hover:underline md:mr-6 flex justify-center"
+      >
+        <BsMouse className="text-4xl animate-bounce text-cyan-700"/>
+      </Link>
     </section>
   );
 };

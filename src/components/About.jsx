@@ -11,7 +11,7 @@ const About = () => {
       >
         About
       </h3>
-      <section className="flex w-full min-h-screen">
+      <section className="flex w-full">
         <div className="">
           <Lottie animationData={myportfolio} className="w-full" loop={true} />
         </div>
@@ -20,19 +20,13 @@ const About = () => {
             I was graduated with BE (IT) from Technological University
             (Mandalay). Transitioning from Telecom field, I have been working as
             a System Engineer about 1 year at Bliss Stock. Currently working at
-            <span className="text-teal-500"> Brycen Myanmar. </span> as a Web
+            <span className="text-cyan-500"> Brycen Myanmar </span> as a Web
             Developer specialized in ReactJS and Laravel development.
           </p>
           <p className="text-md py-2 mb-6 leading-8 text-gray-800 dark:text-gray-200">
             In the dynamic IT landscape, I am dedicated to continuous learning
             and innovation.
           </p>
-          {/* <a href="/ZinLinHtetCV.pdf" download
-            className="text-white bg-cyan-700 hover:bg-cyan-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-            >
-            Download CV 
-          <FcDownload className="text-white"/>
-          </a> */}
           <a
             href="/ZinLinHtetCV.pdf"
             download
