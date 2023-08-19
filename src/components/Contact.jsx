@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { AiOutlineSend } from "react-icons/ai";
 
-
-const Contact = ({notify}) => {
+const Contact = ({ notify }) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -26,9 +26,13 @@ const Contact = ({notify}) => {
       );
   };
   return (
-    <div id="contact" className="w-full min-h-screen">
-    
-      <h3 className="text-3xl py-1 dark:text-white ">Contact</h3>
+    <div className="w-full min-h-screen">
+      <h3
+        id="contact"
+        className="text-3xl font-semibold dark:text-white text-center mt-10"
+      >
+        Contact
+      </h3>
       <form
         ref={form}
         onSubmit={sendEmail}
@@ -84,9 +88,10 @@ const Contact = ({notify}) => {
         </div>
         <button
           type="submit"
-          className="my-5 text-white bg-cyan-700 hover:bg-cyan-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+          className=" my-10 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-cyan-700 rounded-lg hover:bg-cyan-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
         >
           Submit
+          <AiOutlineSend className="text-xl ms-2" />
         </button>
       </form>
     </div>

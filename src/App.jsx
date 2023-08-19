@@ -1,13 +1,20 @@
-import Home from "./components/Home";
-import Social from "./components/Social";
-import './index.css'
-import 'flowbite';
+import "./index.css";
+import "flowbite";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Error from "./pages/Error";
+import Projects from "./pages/Projects";
 
 const App = () => {
   return (
     <div className="mt-12 font-raleway">
-      <Home />
-      <Social />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </Router>
     </div>
   );
 };

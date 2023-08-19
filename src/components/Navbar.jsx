@@ -1,14 +1,15 @@
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useDispatch } from "react-redux";
 import { toggleDarkMode } from "../services/darkModeSlice";
-import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
+
 
 const Navbar = () => {
   const dispatch = useDispatch();
 
   return (
     <nav className="bg-white dark:bg-gray-900 dark:text-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto p-4">
         <a href="/" className="flex items-center">
           <img
             src="zlh3-modified.png"
@@ -58,52 +59,14 @@ const Navbar = () => {
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <Link
-                to="hero"
-                offset={-500}
-                smooth
-                spy
-                activeClass="active"
-                className="cursor-pointer"
-              >
-                Home
-              </Link>
+              <NavLink to={"/"}>
+              Home
+              </NavLink>
             </li>
             <li>
-              <Link
-                to="about"
-                offset={-99}
-                smooth
-                spy
-                activeClass="active"
-                className="cursor-pointer"
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="projects"
-                offset={-99}
-                smooth
-                spy
-                activeClass="active"
-                className="cursor-pointer"
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="contact"
-                offset={-99}
-                smooth
-                spy
-                activeClass="active"
-                className="cursor-pointer"
-              >
-                Contact
-              </Link>
+              <NavLink to={"/projects"}>
+              Projects
+              </NavLink>
             </li>
           </ul>
         </div>
