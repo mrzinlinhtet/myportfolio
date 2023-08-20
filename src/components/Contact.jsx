@@ -43,7 +43,7 @@ const Contact = ({ notify }) => {
         onSubmit={sendEmail}
         className="flex flex-col justify-center items-center mt-5 "
       >
-        <div className="relative z-0 mb-6 group w-[400px]">
+        <div className="relative z-0 mb-6 group w-full md:w-[400px]">
           <input onChange={event => setName(event.target.value)}
           value={name}
             type="text"
@@ -61,7 +61,7 @@ const Contact = ({ notify }) => {
             Name
           </label>
         </div>
-        <div className="relative z-0 mb-6 group w-[400px]">
+        <div className="relative z-0 mb-6 group w-full md:w-[400px]">
           <input onChange={event => setEmail(event.target.value)}
           value={email}
             type="email"
@@ -78,7 +78,7 @@ const Contact = ({ notify }) => {
             Email address
           </label>
         </div>
-        <div className="relative z-0 mb-6 group w-[400px]">
+        <div className="relative z-0 mb-6 group w-full md:w-[400px]">
           <textarea onChange={event => setMessages(event.target.value)}
           value={messages}
             type="text"

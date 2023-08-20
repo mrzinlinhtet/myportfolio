@@ -3,8 +3,8 @@ import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
-    <section id="hero" className="w-full md:min-h-screen">
-      <div className="flex p-10 py-10 justify-center items-center">
+    <section id="hero" className="w-full mb-[82px] md:mb-0 md:min-h-screen">
+      <div className="flex flex-col md:flex-row p-10 py-10 justify-center items-center">
         <div className="flex-1 text-center md:text-left">
           <h2 className="text-3xl md:-tracking-wider py-2 text-[#1F6E8C] font-medium md:text-5xl mb-3">
             Hello, I'm ZLH (Gamani).
@@ -16,7 +16,7 @@ const Hero = () => {
             I craft web solutions with a focus on user experience.
           </p>
         </div>
-        <div className="flex-1 hidden md:block mx-auto bg-white rounded-full overflow-hidden mt-5 md:h-96 md:w-96">
+        <div className="flex-1 md:block mx-auto bg-white rounded-full overflow-hidden mt-10 md:h-96 md:w-96">
           <img
             src="/zlh.jpg"
             alt=""

@@ -55,7 +55,7 @@ const Home = () => {
         <ScrollToTop showUnder={160}>
           <BsFileArrowUpFill className="text-4xl text-cyan-500 mr-3" />
         </ScrollToTop>
-        <Footer />
+        <Footer className="" />
       </main>
     </div>
   );

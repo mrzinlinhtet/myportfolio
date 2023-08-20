@@ -7,7 +7,7 @@ const Navbar = () => {
   const dispatch = useDispatch();
 
   return (
-    <nav className="bg-white dark:bg-gray-900 dark:text-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <nav className="bg-white dark:bg-gray-900 dark:text-white fixed w-full mb-30 z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between md:justify-around mx-auto p-4">
         <NavLink to={"/"} className="flex">
           <img

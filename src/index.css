@@ -5,9 +5,16 @@
 
 @layer components {
   .card {
-    @apply rounded-xl shadow-lg 
+    @apply rounded-xl shadow-lg
   }
 }
+
+.mobile-view {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 
 html,
 body {
