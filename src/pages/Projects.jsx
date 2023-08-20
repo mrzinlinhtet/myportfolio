@@ -14,10 +14,10 @@ const Projects = () => {
       <section id="projects" className={darkMode ? "dark" : ""}>
         <Navbar />
         <Social />
-        <main className=" bg-white mt-10 px-10 dark:bg-gray-900 md:px-20 lg:px-10">
-          <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-3 justify-items-center mt-20">
+        <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-10 min-h-screen">
+          <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-3 justify-items-center mt-16">
             {/* 1st card */}
-            <div className="py-10">
+            <div className="py-10 transform delay-75 transition hover:scale-105">
               <div className="rounded overflow-hidden shadow-lg max-w-sm">
                 <img className="w-full" src="fos-php.jpeg" alt="" />
                 <div className="px-6 py-4">
@@ -59,7 +59,7 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="py-10">
+            <div className="py-10 transform delay-75 transition hover:scale-105">
               <div className="rounded overflow-hidden shadow-lg max-w-sm">
                 <img className="w-full" src="ems-laravel.png" alt="" />
                 <div className="px-6 py-4">
