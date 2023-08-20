@@ -15,12 +15,12 @@ const Skills = () => {
     <>
       <h3
         id="skills"
-        className="text-3xl font-semibold dark:text-white text-center"
+        className="mt-5 text-3xl font-semibold dark:text-white text-center"
       >
         Skills
       </h3>
-      <div className="flex">
-        <div className="flex-1 mx-10">
+      <div className="flex gap-5 md:gap-0 flex-col md:flex-row">
+        <div className="md:flex-1 md:mx-10">
           <h4 className="text-xl py-1 dark:text-white text-center">Frontend</h4>
           <div className="mb-5">
             <div className="flex justify-between mb-1">
@@ -135,8 +135,8 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1 mx-10">
-          <h4 className="text-xl py-1 dark:text-white text-center">Backend</h4>
+        <div className="md:flex-1 md:mx-10">
+          <h4 className="text-xl py-1 dark:text-white text-center"> Backend </h4>
           <div className="mb-5">
             <div className="flex justify-between mb-1">
               <span className="text-base font-medium text-cyan-700 dark:text-white">

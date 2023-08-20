@@ -11,7 +11,7 @@ const About = () => {
       >
         About
       </h3>
-      <section className="flex w-full">
+      <section className="text-center md:text-left md:flex w-full">
         <div className="">
           <Lottie animationData={myportfolio} className="w-full" loop={true} />
         </div>
@@ -30,7 +30,7 @@ const About = () => {
           <a
             href="/ZinLinHtetCV.pdf"
             download
-            className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-cyan-700 rounded-lg hover:bg-cyan-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+            className="mb-5 md:mb-0 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-cyan-700 rounded-lg hover:bg-cyan-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
           >
             Download CV
             <BiDownload className="text-xl ms-2" />

@@ -13,11 +13,11 @@ const Footer = () => {
               <span className="self-center text-gray-500 text-lg whitespace-nowrap dark:text-white">
                 Web Developer
               </span>
-            <span className="self-center text-gray-500 text-xs whitespace-nowrap dark:text-white">
+            <span className="my-3 md:my-0 self-center text-gray-500 text-xs whitespace-nowrap dark:text-white">
               devzinlinhtet@gmail.com
             </span>
             </div>
-            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+            <ul className="flex flex-wrap justify-center items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
               <li>
                 <Link
                   to="hero"
@@ -57,7 +57,7 @@ const Footer = () => {
             </ul>
           </div>
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          <span className="flex justify-center md:block text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2023 ZLH™ . All Rights Reserved.
           </span>
         </div>

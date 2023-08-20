@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .card {
+    @apply rounded-xl shadow-lg 
+  }
+}
 
 html,
 body {

@@ -14,7 +14,7 @@ const Projects = () => {
       <section id="projects" className={darkMode ? "dark" : ""}>
         <Navbar />
         <Social />
-        <main className=" bg-white h-screen px-10 dark:bg-gray-900 md:px-20 lg:px-10">
+        <main className=" bg-white mt-10 h-screen px-10 dark:bg-gray-900 md:px-20 lg:px-10">
           <div className="flex px-10 py-20 gap-16">
             <div className="transform duration-300 translate-x-10 hover:scale-105 shadow-lg max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
               <img className="rounded-t-lg" src="fos-php.jpeg" alt="" />

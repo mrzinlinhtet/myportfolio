@@ -8,11 +8,11 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white dark:bg-gray-900 dark:text-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between md:justify-around mx-auto p-4">
         <NavLink to={"/"} className="flex">
           <img
             src="zlh3-modified.png"
-            className="h-10 w-15 mr-3 rounded-3xl"
+            className="h-10 w-15 mr-3 rounded-3xl hidden md:block"
             alt="Flowbite Logo"
           />
           <span className="font-burtons self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="flex md:order-2">
           <button
             onClick={() => dispatch(toggleDarkMode())}
-            className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-3xl ml-8"
+            className="me-5 md:me-0 bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-3xl ml-8"
           >
             <BsFillMoonStarsFill className=" cursor-pointer text-2xl" />
           </button>
@@ -56,7 +56,7 @@ const Navbar = () => {
           className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-sticky"
         >
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex justify-center gap-5 p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <NavLink to={"/"}>Home</NavLink>
             </li>
