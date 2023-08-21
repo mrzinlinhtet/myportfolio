@@ -108,7 +108,7 @@ const Projects = () => {
                     Gamani Store - ecommerce
                   </div>
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    React Project
+                    Testing React Project
                   </p>
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400"></p>
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -172,7 +172,7 @@ const Projects = () => {
                     Contact App
                   </div>
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    React Project
+                    Testing React Project
                   </p>
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400"></p>
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -236,7 +236,7 @@ const Projects = () => {
                     Foodie Shop
                   </div>
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    React Project
+                    Testing React Project
                   </p>
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400"></p>
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
