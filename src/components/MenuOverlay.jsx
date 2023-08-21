@@ -13,12 +13,12 @@ const MenuOverlay = ({ toggle, setToggle }) => {
     >
       <ul className="flex justify-center gap-5 p-4 md:p-0 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
-          <NavLink to={"/"} onClick={() => setToggle(!toggle)}>
+          <NavLink to={"/"} onClick={() => setToggle(prev=>!prev)}>
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to={"/projects"} onClick={() => setToggle(!toggle)}>
+          <NavLink to={"/projects"} onClick={() => setToggle(prev=>!prev)}>
             Projects
           </NavLink>
         </li>
