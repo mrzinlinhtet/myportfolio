@@ -34,7 +34,7 @@ const Contact = ({ notify }) => {
     <div className="w-full">
       <h3
         id="contact"
-        className="text-3xl font-semibold dark:text-white text-center mt-10"
+        className="md:text-3xl font-semibold dark:text-white text-center mt-10"
       >
         Contact
       </h3>

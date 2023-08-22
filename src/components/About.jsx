@@ -7,7 +7,7 @@ const About = () => {
     <>
       <h3
         id="about"
-        className="text-3xl font-semibold dark:text-white text-center"
+        className="md:text-3xl font-semibold dark:text-white text-center"
       >
         About
       </h3>

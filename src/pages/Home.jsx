@@ -51,7 +51,7 @@ const Home = () => {
         <Skills />
         <Contact notify={notify} />
         <ScrollToTop showUnder={160}>
-          <BsFileArrowUpFill className="text-4xl text-cyan-500 mr-3" />
+          <BsFileArrowUpFill className="text-5xl text-cyan-500 mr-1" />
         </ScrollToTop>
         <Footer className="" />
       </main>
