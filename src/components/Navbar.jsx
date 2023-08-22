@@ -73,7 +73,7 @@ const Navbar = () => {
             ) : (
               <GiCrossMark
                 onClick={() => setToggle((prev) => !prev)}
-                className="relative text-gray-500 text-[25px] cursor-pointer z-20"
+                className="relative text-gray-500 text-[25px] cursor-pointer z-20 mt-1"
               />
             )}
             <MenuOverlay toggle={toggle} setToggle={setToggle} />
