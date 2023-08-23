@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-import Social from "../components/Social";
 import { BsFileArrowUpFill } from "react-icons/bs";
 import ScrollToTop from "react-scroll-up";
 import { BsGithub } from "react-icons/bs";
