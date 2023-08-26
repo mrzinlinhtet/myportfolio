@@ -29,7 +29,7 @@ const Projects = () => {
     },
     {
       project_name: "Gamani Store - ecommerce",
-      project_img: "comingsoon.png",
+      project_img: "gamanistore.png",
       project_type: "Testing React Project",
       user_lang: "",
       duration: "Duration: 2 days",
