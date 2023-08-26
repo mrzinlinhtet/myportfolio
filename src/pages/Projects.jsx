@@ -59,7 +59,7 @@ const Projects = () => {
   return (
     <div className="mt-14">
       <section id="projects" className={darkMode ? "dark" : ""}>
-        <main className="pb-14 bg-white dark:bg-gray-900 md:px-20 lg:px-10 min-h-screen">
+        <main className="pb-14 bg-white dark:bg-gray-900 md:px-20 lg:px-10 min-h-screen mt-7 md:mt-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center ">
             {projects.map((item, index) => (
               <div

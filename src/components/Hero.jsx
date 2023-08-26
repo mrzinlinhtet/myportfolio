@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="w-full mb-[62px] md:mb-0 md:min-h-screen mt-7"
+      className="w-full mb-[62px] md:mb-0 min-h-screen mt-7 md:mt-16"
     >
       <div className="flex flex-col md:flex-row md:p-10 py-10 justify-center items-center">
         <div className="flex-1 text-center md:text-left">
@@ -31,7 +31,7 @@ const Hero = () => {
         activeClass="active"
         className="cursor-pointer flex justify-center"
       >
-        <BsMouse className="text-4xl animate-bounce text-cyan-700" />
+        <BsMouse className="text-4xl animate-bounce text-cyan-700 md:mt-12" />
       </Link>
     </section>
   );
