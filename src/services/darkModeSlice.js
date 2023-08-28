@@ -1,8 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
+import Cookies from 'js-cookie';
 
 const initialState = {
   value: 0,
-  isDarkMode: false, // Add a property to track the dark mode state
+  isDarkMode: Cookies.get('isDarkMode') === 'true', // Read from the cookie
 };
 
 export const darkModeSlice = createSlice({
@@ -10,13 +11,13 @@ export const darkModeSlice = createSlice({
   initialState,
   reducers: {
     toggleDarkMode: (state) => {
-      // Toggle the isDarkMode property between true and false
-      state.isDarkMode = !state.isDarkMode;
+      const newDarkModeState = !state.isDarkMode;
+      state.isDarkMode = newDarkModeState;
+      Cookies.set('isDarkMode', newDarkModeState); // Save to the cookie
     },
   },
 });
 
-// Action creators are generated for each case reducer function
 export const { toggleDarkMode } = darkModeSlice.actions;
 
 export default darkModeSlice.reducer;
