@@ -43,7 +43,7 @@ const Skills = () => {
     },
     {
       name: "MySQL",
-      progress: "66%",
+      progress: "70%",
     },
   ];
 
