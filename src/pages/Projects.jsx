@@ -68,7 +68,7 @@ const Projects = () => {
               >
                 <div className="rounded overflow-hidden shadow-lg max-w-sm h-[400px] w-[300px] flex flex-col justify-between">
                   <img
-                    className="w-full h-[150px]"
+                    className="w-full h-[150px] object-cover"
                     src={item.project_img}
                     alt=""
                   />
