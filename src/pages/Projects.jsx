@@ -15,7 +15,7 @@ const Projects = () => {
       project_type: "Pure PHP MVC Project",
       use_lang: "MySQL",
       duration: "Duration: 5 weeks",
-      project_link: "https://github.com/zinlinxtet/FOS",
+      project_link: "https://github.com/mrzinlinhtet/FOS",
       live: "",
     },
     {
@@ -24,7 +24,7 @@ const Projects = () => {
       project_type: "Laravel MVC Project",
       use_lang: "MySQL",
       duration: "Duration: 4 weeks",
-      project_link: "https://github.com/zinlinxtet/employee-reg-laravel7-v2",
+      project_link: "https://github.com/mrzinlinhtet/employee-reg-laravel7-v2",
       live: "",
     },
     {
@@ -33,7 +33,7 @@ const Projects = () => {
       project_type: "Testing React Project",
       user_lang: "",
       duration: "Duration: 2 days",
-      project_link: "https://github.com/zinlinxtet/ecommerce-proj",
+      project_link: "https://github.com/mrzinlinhtet/ecommerce-proj",
       live: "https://gamani-store.vercel.app",
     },
     {
@@ -42,7 +42,7 @@ const Projects = () => {
       project_type: "Testing React Project",
       user_lang: "",
       duration: "Duration: 2 days",
-      project_link: "https://github.com/zinlinxtet/recontact-app-proj",
+      project_link: "https://github.com/mrzinlinhtet/recontact-app-proj",
       live: "https://recontact-app.vercel.app/",
     },
     {
@@ -51,7 +51,7 @@ const Projects = () => {
       project_type: "Testing React Project",
       user_lang: "",
       duration: "Duration: 2 days",
-      project_link: "https://github.com/zinlinxtet/foodie",
+      project_link: "https://github.com/mrzinlinhtet/foodie",
       live: "https://foodie-shop.vercel.app/",
     },
   ];
