@@ -7,10 +7,10 @@ const Social = () => {
       <Link to="https://github.com/mrzinlinhtet">
         <AiFillGithub />
       </Link>
-      <Link to="https://www.linkedin.com/in/zinlinhtet/" >
+      <Link to="https://www.linkedin.com/in/zinlinhtet" >
         <AiFillLinkedin />
       </Link>
-      <Link to="https://www.facebook.com/zinlinhtetofficial">
+      <Link to="https://www.facebook.com/mrzinlinhtet">
         <AiFillFacebook />
       </Link>
     </div>
