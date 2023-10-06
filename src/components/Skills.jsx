@@ -1,54 +1,56 @@
+import ProgressBar from "./ProgressBar/ProgressBar";
+
 const Skills = () => {
   const frontend = [
     {
       name: "HTML",
-      progress: 88,
+      progress: "88%",
     },
     {
       name: "CSS",
-      progress: 80,
+      progress: "80%",
     },
     {
       name: "JavaScript",
-      progress: 75,
+      progress: "75%",
     },
     {
       name: "Bootstrap",
-      progress: 90,
+      progress: "90%",
     },
     {
       name: "Tailwind",
-      progress: 70,
+      progress: "70%",
     },
     {
       name: "React",
-      progress: 60,
+      progress: "60%",
     },
     {
       name: "Vue",
-      progress: 50,
+      progress: "50%",
     },
   ];
 
   const backend = [
     {
       name: "PHP",
-      progress: 85,
+      progress: "85%",
     },
     {
       name: "Laravel",
-      progress: 75,
+      progress: "75%",
     },
     {
       name: "MySQL",
-      progress: 66,
+      progress: "70%",
     },
   ];
 
   const others = [
     {
       name: "Git & GitHub",
-      progress: 75,
+      progress: "75%",
     },
   ];
   return (
@@ -65,22 +67,16 @@ const Skills = () => {
             Frontend
           </h4>
           {frontend.map((item, index) => (
-            <div key={index} className="mb-5">
-              <div className="flex justify-between mb-1">
-                <span className="text-base font-medium text-cyan-700 dark:text-white">
-                  {item.name}
-                </span>
-                <span className="text-sm font-medium text-cyan-700 dark:text-white">
-                  {item.progress}%
-                </span>
-              </div>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                <div
-                  className="bg-cyan-600 h-2.5 rounded-full"
-                  style={{ width: `${item.progress}%` }}
-                ></div>
-              </div>
-            </div>
+            <ProgressBar
+              key={index}
+              label={item.name}
+              visualParts={[
+                {
+                  percentage: item.progress,
+                  color: "#1F6E8C",
+                },
+              ]}
+            />
           ))}
         </div>
         <div className="md:flex-1 md:mx-10">
@@ -88,44 +84,32 @@ const Skills = () => {
             Backend
           </h4>
           {backend.map((item, index) => (
-            <div key={index} className="mb-5">
-              <div className="flex justify-between mb-1">
-                <span className="text-base font-medium text-cyan-700 dark:text-white">
-                  {item.name}
-                </span>
-                <span className="text-sm font-medium text-cyan-700 dark:text-white">
-                  {item.progress}%
-                </span>
-              </div>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                <div
-                  className="bg-cyan-600 h-2.5 rounded-full"
-                  style={{ width: `${item.progress}%` }}
-                ></div>
-              </div>
-            </div>
+            <ProgressBar
+              key={index}
+              label={item.name}
+              visualParts={[
+                {
+                  percentage: item.progress,
+                  color: "#1F6E8C",
+                },
+              ]}
+            />
           ))}
 
           <h4 className="md:text-xl mt-10 py-1 dark:text-white text-center">
             Others
           </h4>
           {others.map((item, index) => (
-            <div key={index} className="mb-5">
-              <div className="flex justify-between mb-1">
-                <span className="text-base font-medium text-cyan-700 dark:text-white">
-                  {item.name}
-                </span>
-                <span className="text-sm font-medium text-cyan-700 dark:text-white">
-                  {item.progress}%
-                </span>
-              </div>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                <div
-                  className="bg-cyan-600 h-2.5 rounded-full"
-                  style={{ width: `${item.progress}%` }}
-                ></div>
-              </div>
-            </div>
+            <ProgressBar
+              key={index}
+              label={item.name}
+              visualParts={[
+                {
+                  percentage: item.progress,
+                  color: "#1F6E8C",
+                },
+              ]}
+            />
           ))}
         </div>
       </div>

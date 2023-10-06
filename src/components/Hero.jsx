@@ -1,5 +1,6 @@
 import { BsMouse } from "react-icons/bs";
 import { Link } from "react-scroll";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
@@ -7,10 +8,17 @@ const Hero = () => {
       id="hero"
       className="w-full mb-[62px] md:mb-0 min-h-screen mt-7 md:mt-16"
     >
-      <div className="flex flex-col md:flex-row md:p-10 py-10 justify-center items-center">
+      <div className="flex flex-col md:flex-row md:p-10 pt-5 pb-10 justify-center items-center">
         <div className="flex-1 text-center md:text-left">
           <h2 className="text-3xl md:-tracking-wider py-2 text-[#1F6E8C] font-medium md:text-5xl mb-3">
-            Hello, I'm ZLH (Gamani).
+            Hello, I'm <br className="md:hidden" />
+            <TypeAnimation
+              sequence={["Zin Lin Htet.", 1000, "Gamani.", 1000]}
+              wrapper="span"
+              speed={50}
+              style={{ fontSize: "1.3em", display: "inline-block" }}
+              repeat={Infinity}
+            />
           </h2>
           <h3 className="text-xl py-2 dark:text-white md:text-3xl">
             Web Developer
@@ -31,7 +39,7 @@ const Hero = () => {
         activeClass="active"
         className="cursor-pointer flex justify-center"
       >
-        <BsMouse className="text-4xl animate-bounce text-cyan-700 md:mt-12" />
+        <BsMouse className="text-4xl animate-bounce text-cyan-700 mt-8 md:mt-16" />
       </Link>
     </section>
   );
