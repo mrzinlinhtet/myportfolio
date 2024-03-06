@@ -42,12 +42,16 @@ const Skills = () => {
       progress: "75%",
     },
     {
-      name: "MySQL",
-      progress: "70%",
+      name: "Java",
+      progress: "60%",
     },
   ];
 
   const others = [
+    {
+      name: "MySQL",
+      progress: "70%",
+    },
     {
       name: "Git & GitHub",
       progress: "75%",
