@@ -30,6 +30,10 @@ const Skills = () => {
       name: "Vue",
       progress: "50%",
     },
+    {
+      name: "Angular",
+      progress: "50%",
+    },
   ];
 
   const backend = [
