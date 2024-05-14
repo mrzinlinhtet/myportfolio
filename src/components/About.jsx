@@ -17,14 +17,14 @@ const About = () => {
         </div>
         <div>
           <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            I was graduated with BE (IT) from Technological University
-            (Mandalay). Transitioning from Telecom field, I have been working as
-            a System Engineer about 1 year at Bliss Stock. Currently working at
-            <span className="text-cyan-500"> Brycen Myanmar </span> as a Web
-            Developer specialized in Angular and Java development.
+            I was graduated with BE in Information Technology from Technological University
+            (Mandalay). Transitioning from Telecom field, where I have 3 years of experience, I have been working as
+            a Web Developer for about 2 year at Bliss Stock and Brycen Myanmar. Currently working at
+            <span className="text-cyan-500"> Fixie Myanmar </span> as a Web
+            Developer specialized in Java development.
           </p>
           <p className="text-md py-2 mb-6 leading-8 text-gray-800 dark:text-gray-200">
-            In the dynamic IT landscape, I'm dedicated to continuous learning
+            In the dynamic IT landscape, I&apos;m dedicated to continuous learning
             and innovation.
           </p>
           <a
