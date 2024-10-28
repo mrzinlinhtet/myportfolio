@@ -47,7 +47,7 @@ const Skills = () => {
     },
     {
       name: "Java",
-      progress: "60%",
+      progress: "70%",
     },
   ];
 
@@ -55,6 +55,10 @@ const Skills = () => {
     {
       name: "MySQL",
       progress: "70%",
+    },
+    {
+      name: "PostgreSQL",
+      progress: "60%",
     },
     {
       name: "Git & GitHub",

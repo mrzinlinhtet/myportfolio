@@ -20,7 +20,7 @@ const About = () => {
             I was graduated with BE in Information Technology from Technological University
             (Mandalay). Transitioning from Telecom field, where I have 3 years of experience, I have been working as
             a Web Developer for about 2 year at Bliss Stock and Brycen Myanmar. Currently working at
-            <span className="text-cyan-500"> Fixie Myanmar </span> as a Web
+            <span className="text-cyan-500"> Fixie </span> as a Web
             Developer specialized in Java development.
           </p>
           <p className="text-md py-2 mb-6 leading-8 text-gray-800 dark:text-gray-200">
