@@ -1,6 +1,5 @@
 import Lottie from "lottie-react";
 import myportfolio from "../lottie/myportfolio.json";
-import { BiDownload } from "react-icons/bi";
 
 const About = () => {
   return (
